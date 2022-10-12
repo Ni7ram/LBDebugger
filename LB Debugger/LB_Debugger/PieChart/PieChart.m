@@ -19,6 +19,7 @@
     @property UIView* canvas;
     @property CGRect frame;
     @property MCPieChartView* pieChartView;
+    @property __weak PieChart *weakSelf;
 
     @property (strong, nonatomic) NSMutableArray *values;
     @property (strong, nonatomic) NSMutableArray *labels;
@@ -59,6 +60,8 @@ const int PIECHART_MARGIN = 140;
 }
 
 - (void) initPieChart {
+    _weakSelf = self;
+    
     // INIT PIE CHART
     _pieChartView = [[MCPieChartView alloc] initWithFrame: _canvas.frame];
     _values   = [[NSMutableArray alloc] init];
@@ -88,12 +91,15 @@ const int PIECHART_MARGIN = 140;
 #pragma mark - Public Methods
 
 - (void) show {
+    
     [UIView animateWithDuration: 0.3 delay: 0.2 options: UIViewAnimationOptionCurveEaseOut animations:^() {
-        _pieChartView.alpha = 1;
+        PieChart *strongSelf = self->_weakSelf;
         
-        CGRect newFrame = _pieChartView.frame;
+        strongSelf->_pieChartView.alpha = 1;
+        
+        CGRect newFrame = strongSelf->_pieChartView.frame;
         newFrame.origin.y -= 300;
-        [_pieChartView setFrame: newFrame];
+        [strongSelf->_pieChartView setFrame: newFrame];
     } completion: ^(BOOL finished) {
         [self addSliceWithLabel: @"Event" value: 10];
     }];
@@ -102,11 +108,13 @@ const int PIECHART_MARGIN = 140;
 - (void) hide {
     // CUANDO ANIMES EL TEXTVIEW ESTE EFECTO VA A QUEDAR BIEN
     [UIView animateWithDuration: 0.5 delay: 0 options: UIViewAnimationOptionCurveEaseOut animations:^() {
-        _pieChartView.alpha = 0;
+        PieChart *strongSelf = self->_weakSelf;
         
-        CGRect newFrame = _pieChartView.frame;
+        strongSelf->_pieChartView.alpha = 0;
+        
+        CGRect newFrame = strongSelf->_pieChartView.frame;
         newFrame.origin.y += 300;
-        [_pieChartView setFrame: newFrame];
+        [strongSelf->_pieChartView setFrame: newFrame];
     } completion: ^(BOOL finished) {}];
 }
 

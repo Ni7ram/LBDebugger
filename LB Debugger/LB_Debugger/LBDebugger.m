@@ -55,6 +55,8 @@ CADisplayLink* FPS;
     @property bool DEV_MODE;
     @property bool logToNSLog;
 
+    @property __weak LBDebugger *weakSelf;
+
     @property NSLayoutConstraint* debuggerLeftC;
     @property NSLayoutConstraint* debuggerTopC;
     @property NSLayoutConstraint* debuggerHeightC;
@@ -134,6 +136,7 @@ CADisplayLink* FPS;
 // DEFAULT INIT
 - (id) initWithCanvas: (UIView*) _canvas {
     self = [self init];
+    _weakSelf = self
     
     // SET DEFAULT VALUES
     canvas = _canvas;
@@ -351,9 +354,11 @@ CADisplayLink* FPS;
     
     // ADAPT CONSOLE HEIGHT
     [UIView animateWithDuration: 0.5 delay: 0 options: UIViewAnimationOptionCurveEaseOut animations:^() {
-        CGRect newFrame = console.frame;
+        LBDebugger *strongSelf = self->_weakSelf;
+        
+        CGRect newFrame = strongSelf->console.frame;
         newFrame.size.height *= 2;
-        console.frame = newFrame;
+        strongSelf->console.frame = newFrame;
     } completion: ^(BOOL finished) {}];
 }
 
@@ -373,22 +378,25 @@ CADisplayLink* FPS;
 }
 
 - (void) rotateControls {
+    LBDebugger *strongSelf = self->_weakSelf;
+    
     // Resposition All (animated)
     [UIView animateWithDuration: 0.6 delay: 0.4 options: UIViewAnimationOptionCurveEaseOut animations:^() {
+        
         // vContainer
-        [vContainer setFrame: CGRectMake(x, y, (canvas.frame.size.width/2) - DEFAULT_CONSOLE_PADDING * 2, (canvas.frame.size.height) - 60)];
+        [strongSelf->vContainer setFrame: CGRectMake(strongSelf->x, strongSelf->y, (strongSelf->canvas.frame.size.width/2) - DEFAULT_CONSOLE_PADDING * 2, (strongSelf->canvas.frame.size.height) - 60)];
         
         // Console
-        int h = (activeTab != 2) ? canvas.frame.size.height : (canvas.frame.size.height+130)/2;
-        [console setFrame: CGRectMake(x - DEFAULT_CONSOLE_PADDING, y, (canvas.frame.size.width/2) - (DEFAULT_CONSOLE_PADDING * 4), h - 130)];
+        int h = (strongSelf->activeTab != 2) ? strongSelf->canvas.frame.size.height : (strongSelf->canvas.frame.size.height+130)/2;
+        [strongSelf->console setFrame: CGRectMake(strongSelf->x - DEFAULT_CONSOLE_PADDING, strongSelf->y, (strongSelf->canvas.frame.size.width/2) - (DEFAULT_CONSOLE_PADDING * 4), h - 130)];
         
         // TABS (if necessary, create scroll buttons for tabs, and adapt container)
-        if (((DEFAULT_TAB_SEPARATION + DEFAULT_TAB_WIDTH) * sizeof(DEFAULT_TABS) / sizeof(DEFAULT_TABS[0])) >= (canvas.frame.size.width/2) - (DEFAULT_CONSOLE_PADDING * 4)) {
+        if (((DEFAULT_TAB_SEPARATION + DEFAULT_TAB_WIDTH) * sizeof(DEFAULT_TABS) / sizeof(DEFAULT_TABS[0])) >= (strongSelf->canvas.frame.size.width/2) - (DEFAULT_CONSOLE_PADDING * 4)) {
             // Scroll necesario
-            [tabsContainer setFrame: CGRectMake(x - DEFAULT_CONSOLE_PADDING + DEFAULT_SCROLL_BUTTON_WIDTH, y - 30, ((canvas.frame.size.width/2) - DEFAULT_CONSOLE_PADDING * 4) - 1 - (DEFAULT_SCROLL_BUTTON_WIDTH * 2), DEFAULT_TAB_HEIGHT + 2)];
+            [strongSelf->tabsContainer setFrame: CGRectMake(strongSelf->x - DEFAULT_CONSOLE_PADDING + DEFAULT_SCROLL_BUTTON_WIDTH, strongSelf->y - 30, ((strongSelf->canvas.frame.size.width/2) - DEFAULT_CONSOLE_PADDING * 4) - 1 - (DEFAULT_SCROLL_BUTTON_WIDTH * 2), DEFAULT_TAB_HEIGHT + 2)];
         } else {
             // Scroll innecesario
-            [tabsContainer setFrame: CGRectMake(x - DEFAULT_CONSOLE_PADDING, y - 30, ((canvas.frame.size.width/2) - DEFAULT_CONSOLE_PADDING * 4) - 1, DEFAULT_TAB_HEIGHT + 2)];
+            [strongSelf->tabsContainer setFrame: CGRectMake(strongSelf->x - DEFAULT_CONSOLE_PADDING, strongSelf->y - 30, ((strongSelf->canvas.frame.size.width/2) - DEFAULT_CONSOLE_PADDING * 4) - 1, DEFAULT_TAB_HEIGHT + 2)];
             
             // REPOSITION TABS IF THEY ARE SCROLLED
             for (int i = 0; i < (sizeof tabsArray) / (sizeof tabsArray[0]); i++) {
@@ -401,12 +409,12 @@ CADisplayLink* FPS;
         }
         
         // TABS RIGHT SCROLL BUTTON
-        [rightTabScrollBtn setFrame: CGRectMake(canvas.frame.size.width/2 - DEFAULT_SCROLL_BUTTON_WIDTH - (DEFAULT_CONSOLE_PADDING * 4) + 5 + DEFAULT_CONSOLE_PADDING, DEFAULT_CONSOLE_PADDING, DEFAULT_SCROLL_BUTTON_WIDTH - 5, DEFAULT_TAB_HEIGHT)];
+        [strongSelf->rightTabScrollBtn setFrame: CGRectMake(strongSelf->canvas.frame.size.width/2 - DEFAULT_SCROLL_BUTTON_WIDTH - (DEFAULT_CONSOLE_PADDING * 4) + 5 + DEFAULT_CONSOLE_PADDING, DEFAULT_CONSOLE_PADDING, DEFAULT_SCROLL_BUTTON_WIDTH - 5, DEFAULT_TAB_HEIGHT)];
         
         // FPS
-        [FPSLabel setFrame: CGRectMake(vContainer.frame.size.width - 75, vContainer.frame.size.height - 30, 100, 30)];
+        [strongSelf->FPSLabel setFrame: CGRectMake(strongSelf->vContainer.frame.size.width - 75, strongSelf->vContainer.frame.size.height - 30, 100, 30)];
     } completion: ^(BOOL finished) {
-        console.text = [NSString stringWithFormat: @"%@ ", console.text]; // Solves bug (clipped textView after rotating)
+        strongSelf->console.text = [NSString stringWithFormat: @"%@ ", strongSelf->console.text]; // Solves bug (clipped textView after rotating)
     }];
     
     // SHOW / HIDE SCROLL TABS BUTTONS (queda mal en el bloque de la animacion)
@@ -423,8 +431,8 @@ CADisplayLink* FPS;
     accessTab.alpha = 0;
     
     [UIView animateWithDuration: 0.9 delay: 1 options: UIViewAnimationOptionCurveEaseOut animations:^() {
-        [accessTab setFrame: CGRectMake(canvas.frame.size.width - 30, 40, 40, 70)];
-        accessTab.alpha = 1;
+        [strongSelf->accessTab setFrame: CGRectMake(strongSelf->canvas.frame.size.width - 30, 40, 40, 70)];
+        strongSelf->accessTab.alpha = 1;
     } completion: ^(BOOL finished) {} ];
     
     // PieChart

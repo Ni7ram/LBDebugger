@@ -340,9 +340,9 @@ CADisplayLink* FPS;
     
     // ADAPT CONSOLE HEIGHT
     [UIView animateWithDuration: 0.5 delay: 0 options: UIViewAnimationOptionCurveEaseOut animations:^() {
-        CGRect newFrame = console.frame;
+        CGRect newFrame = self->console.frame;
         newFrame.size.height /= 2;
-        console.frame = newFrame;
+        self->console.frame = newFrame;
     } completion: ^(BOOL finished) {}];
 }
 

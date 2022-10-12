@@ -136,7 +136,7 @@ CADisplayLink* FPS;
 // DEFAULT INIT
 - (id) initWithCanvas: (UIView*) _canvas {
     self = [self init];
-    _weakSelf = self
+    _weakSelf = self;
     
     // SET DEFAULT VALUES
     canvas = _canvas;

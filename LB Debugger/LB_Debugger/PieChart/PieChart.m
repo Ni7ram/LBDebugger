@@ -95,7 +95,7 @@ const int PIECHART_MARGIN = 140;
         newFrame.origin.y -= 300;
         [_pieChartView setFrame: newFrame];
     } completion: ^(BOOL finished) {
-        [self addSliceWithLabel: @"Hola" value: 10];
+        [self addSliceWithLabel: @"Event" value: 10];
     }];
 }
 

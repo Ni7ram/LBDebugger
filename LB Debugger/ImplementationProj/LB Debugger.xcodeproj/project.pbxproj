@@ -14,18 +14,18 @@
 		FE8E258728F69F72004FCF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE8E258628F69F72004FCF75 /* Assets.xcassets */; };
 		FE8E258A28F69F72004FCF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE8E258828F69F72004FCF75 /* LaunchScreen.storyboard */; };
 		FE8E258D28F69F72004FCF75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E258C28F69F72004FCF75 /* main.m */; };
-		FE8E25AE28F69FAC004FCF75 /* LBDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E259528F69FAC004FCF75 /* LBDebugger.m */; };
-		FE8E25AF28F69FAC004FCF75 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FE8E259628F69FAC004FCF75 /* LICENSE */; };
-		FE8E25B028F69FAC004FCF75 /* Tab.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E259828F69FAC004FCF75 /* Tab.m */; };
-		FE8E25B128F69FAC004FCF75 /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E259B28F69FAC004FCF75 /* MCNewCustomLayer.m */; };
-		FE8E25B228F69FAC004FCF75 /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E259C28F69FAC004FCF75 /* MCUtil.m */; };
-		FE8E25B328F69FAC004FCF75 /* MCPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E25A228F69FAC004FCF75 /* MCPieChartView.m */; };
-		FE8E25B428F69FAC004FCF75 /* MCSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E25A328F69FAC004FCF75 /* MCSliceLayer.m */; };
-		FE8E25B528F69FAC004FCF75 /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E25A628F69FAC004FCF75 /* MCNewCustomLayeredView.m */; };
-		FE8E25B628F69FAC004FCF75 /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E25A828F69FAC004FCF75 /* PieChart.m */; };
-		FE8E25B728F69FAC004FCF75 /* GraphicsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E25AA28F69FAC004FCF75 /* GraphicsManager.m */; };
-		FE8E25B828F69FAC004FCF75 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = FE8E25AB28F69FAC004FCF75 /* README.txt */; };
-		FE8E25B928F69FAC004FCF75 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8E25AD28F69FAC004FCF75 /* Message.m */; };
+		FEF93C5D28F853F400E4E221 /* MCNewCustomLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C4528F853F400E4E221 /* MCNewCustomLayer.m */; };
+		FEF93C5E28F853F400E4E221 /* MCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C4628F853F400E4E221 /* MCUtil.m */; };
+		FEF93C5F28F853F400E4E221 /* MCPieChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C4C28F853F400E4E221 /* MCPieChartView.m */; };
+		FEF93C6028F853F400E4E221 /* MCSliceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C4D28F853F400E4E221 /* MCSliceLayer.m */; };
+		FEF93C6128F853F400E4E221 /* MCNewCustomLayeredView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C5028F853F400E4E221 /* MCNewCustomLayeredView.m */; };
+		FEF93C6228F853F400E4E221 /* PieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C5228F853F400E4E221 /* PieChart.m */; };
+		FEF93C6328F853F400E4E221 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = FEF93C5428F853F400E4E221 /* README.txt */; };
+		FEF93C6428F853F400E4E221 /* Tab.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C5628F853F400E4E221 /* Tab.m */; };
+		FEF93C6528F853F400E4E221 /* GraphicsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C5828F853F400E4E221 /* GraphicsManager.m */; };
+		FEF93C6628F853F400E4E221 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C5A28F853F400E4E221 /* Message.m */; };
+		FEF93C6728F853F400E4E221 /* LBDebugger.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF93C5B28F853F400E4E221 /* LBDebugger.m */; };
+		FEF93C6828F853F400E4E221 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FEF93C5C28F853F400E4E221 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,30 +41,30 @@
 		FE8E258928F69F72004FCF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE8E258B28F69F72004FCF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE8E258C28F69F72004FCF75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FE8E259428F69FAC004FCF75 /* GraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicsManager.h; sourceTree = "<group>"; };
-		FE8E259528F69FAC004FCF75 /* LBDebugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBDebugger.m; sourceTree = "<group>"; };
-		FE8E259628F69FAC004FCF75 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FE8E259728F69FAC004FCF75 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
-		FE8E259828F69FAC004FCF75 /* Tab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab.m; sourceTree = "<group>"; };
-		FE8E259B28F69FAC004FCF75 /* MCNewCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayer.m; sourceTree = "<group>"; };
-		FE8E259C28F69FAC004FCF75 /* MCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUtil.m; sourceTree = "<group>"; };
-		FE8E259D28F69FAC004FCF75 /* MCSliceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSliceLayer.h; sourceTree = "<group>"; };
-		FE8E259E28F69FAC004FCF75 /* MCPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPieChartView.h; sourceTree = "<group>"; };
-		FE8E259F28F69FAC004FCF75 /* MCNewCustomLayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayeredView.h; sourceTree = "<group>"; };
-		FE8E25A028F69FAC004FCF75 /* MCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCore.h; sourceTree = "<group>"; };
-		FE8E25A128F69FAC004FCF75 /* MCNewCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayer.h; sourceTree = "<group>"; };
-		FE8E25A228F69FAC004FCF75 /* MCPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPieChartView.m; sourceTree = "<group>"; };
-		FE8E25A328F69FAC004FCF75 /* MCSliceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSliceLayer.m; sourceTree = "<group>"; };
-		FE8E25A428F69FAC004FCF75 /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h"; sourceTree = "<group>"; };
-		FE8E25A528F69FAC004FCF75 /* MCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUtil.h; sourceTree = "<group>"; };
-		FE8E25A628F69FAC004FCF75 /* MCNewCustomLayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayeredView.m; sourceTree = "<group>"; };
-		FE8E25A728F69FAC004FCF75 /* PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart.h; sourceTree = "<group>"; };
-		FE8E25A828F69FAC004FCF75 /* PieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart.m; sourceTree = "<group>"; };
-		FE8E25A928F69FAC004FCF75 /* LBDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBDebugger.h; sourceTree = "<group>"; };
-		FE8E25AA28F69FAC004FCF75 /* GraphicsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicsManager.m; sourceTree = "<group>"; };
-		FE8E25AB28F69FAC004FCF75 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		FE8E25AC28F69FAC004FCF75 /* Tab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab.h; sourceTree = "<group>"; };
-		FE8E25AD28F69FAC004FCF75 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		FEF93C4528F853F400E4E221 /* MCNewCustomLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayer.m; sourceTree = "<group>"; };
+		FEF93C4628F853F400E4E221 /* MCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCUtil.m; sourceTree = "<group>"; };
+		FEF93C4728F853F400E4E221 /* MCSliceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSliceLayer.h; sourceTree = "<group>"; };
+		FEF93C4828F853F400E4E221 /* MCPieChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCPieChartView.h; sourceTree = "<group>"; };
+		FEF93C4928F853F400E4E221 /* MCNewCustomLayeredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayeredView.h; sourceTree = "<group>"; };
+		FEF93C4A28F853F400E4E221 /* MCCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCCore.h; sourceTree = "<group>"; };
+		FEF93C4B28F853F400E4E221 /* MCNewCustomLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNewCustomLayer.h; sourceTree = "<group>"; };
+		FEF93C4C28F853F400E4E221 /* MCPieChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCPieChartView.m; sourceTree = "<group>"; };
+		FEF93C4D28F853F400E4E221 /* MCSliceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSliceLayer.m; sourceTree = "<group>"; };
+		FEF93C4E28F853F400E4E221 /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h"; sourceTree = "<group>"; };
+		FEF93C4F28F853F400E4E221 /* MCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCUtil.h; sourceTree = "<group>"; };
+		FEF93C5028F853F400E4E221 /* MCNewCustomLayeredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNewCustomLayeredView.m; sourceTree = "<group>"; };
+		FEF93C5128F853F400E4E221 /* PieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieChart.h; sourceTree = "<group>"; };
+		FEF93C5228F853F400E4E221 /* PieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieChart.m; sourceTree = "<group>"; };
+		FEF93C5328F853F400E4E221 /* GraphicsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GraphicsManager.h; path = ../GraphicsManager.h; sourceTree = "<group>"; };
+		FEF93C5428F853F400E4E221 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.txt; path = ../README.txt; sourceTree = "<group>"; };
+		FEF93C5528F853F400E4E221 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = ../Message.h; sourceTree = "<group>"; };
+		FEF93C5628F853F400E4E221 /* Tab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tab.m; path = ../Tab.m; sourceTree = "<group>"; };
+		FEF93C5728F853F400E4E221 /* LBDebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LBDebugger.h; path = ../LBDebugger.h; sourceTree = "<group>"; };
+		FEF93C5828F853F400E4E221 /* GraphicsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GraphicsManager.m; path = ../GraphicsManager.m; sourceTree = "<group>"; };
+		FEF93C5928F853F400E4E221 /* Tab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tab.h; path = ../Tab.h; sourceTree = "<group>"; };
+		FEF93C5A28F853F400E4E221 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = ../Message.m; sourceTree = "<group>"; };
+		FEF93C5B28F853F400E4E221 /* LBDebugger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LBDebugger.m; path = ../LBDebugger.m; sourceTree = "<group>"; };
+		FEF93C5C28F853F400E4E221 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,17 @@
 		FE8E256E28F69F71004FCF75 = {
 			isa = PBXGroup;
 			children = (
-				FE8E259328F69FAC004FCF75 /* LB_Debugger */,
+				FEF93C5328F853F400E4E221 /* GraphicsManager.h */,
+				FEF93C5828F853F400E4E221 /* GraphicsManager.m */,
+				FEF93C5728F853F400E4E221 /* LBDebugger.h */,
+				FEF93C5B28F853F400E4E221 /* LBDebugger.m */,
+				FEF93C5C28F853F400E4E221 /* LICENSE */,
+				FEF93C5528F853F400E4E221 /* Message.h */,
+				FEF93C5A28F853F400E4E221 /* Message.m */,
+				FEF93C4328F853F400E4E221 /* PieChart */,
+				FEF93C5428F853F400E4E221 /* README.txt */,
+				FEF93C5928F853F400E4E221 /* Tab.h */,
+				FEF93C5628F853F400E4E221 /* Tab.m */,
 				FE8E257928F69F71004FCF75 /* LB Debugger */,
 				FE8E257828F69F71004FCF75 /* Products */,
 			);
@@ -113,49 +123,32 @@
 			path = "LB Debugger";
 			sourceTree = "<group>";
 		};
-		FE8E259328F69FAC004FCF75 /* LB_Debugger */ = {
+		FEF93C4328F853F400E4E221 /* PieChart */ = {
 			isa = PBXGroup;
 			children = (
-				FE8E259428F69FAC004FCF75 /* GraphicsManager.h */,
-				FE8E25AA28F69FAC004FCF75 /* GraphicsManager.m */,
-				FE8E25A928F69FAC004FCF75 /* LBDebugger.h */,
-				FE8E259528F69FAC004FCF75 /* LBDebugger.m */,
-				FE8E259728F69FAC004FCF75 /* Message.h */,
-				FE8E25AD28F69FAC004FCF75 /* Message.m */,
-				FE8E25AC28F69FAC004FCF75 /* Tab.h */,
-				FE8E259828F69FAC004FCF75 /* Tab.m */,
-				FE8E259928F69FAC004FCF75 /* PieChart */,
-				FE8E25AB28F69FAC004FCF75 /* README.txt */,
-				FE8E259628F69FAC004FCF75 /* LICENSE */,
+				FEF93C4428F853F400E4E221 /* iOS_Pie_Chart */,
+				FEF93C5128F853F400E4E221 /* PieChart.h */,
+				FEF93C5228F853F400E4E221 /* PieChart.m */,
 			);
-			path = LB_Debugger;
+			name = PieChart;
+			path = ../PieChart;
 			sourceTree = "<group>";
 		};
-		FE8E259928F69FAC004FCF75 /* PieChart */ = {
+		FEF93C4428F853F400E4E221 /* iOS_Pie_Chart */ = {
 			isa = PBXGroup;
 			children = (
-				FE8E259A28F69FAC004FCF75 /* iOS_Pie_Chart */,
-				FE8E25A728F69FAC004FCF75 /* PieChart.h */,
-				FE8E25A828F69FAC004FCF75 /* PieChart.m */,
-			);
-			path = PieChart;
-			sourceTree = "<group>";
-		};
-		FE8E259A28F69FAC004FCF75 /* iOS_Pie_Chart */ = {
-			isa = PBXGroup;
-			children = (
-				FE8E259B28F69FAC004FCF75 /* MCNewCustomLayer.m */,
-				FE8E259C28F69FAC004FCF75 /* MCUtil.m */,
-				FE8E259D28F69FAC004FCF75 /* MCSliceLayer.h */,
-				FE8E259E28F69FAC004FCF75 /* MCPieChartView.h */,
-				FE8E259F28F69FAC004FCF75 /* MCNewCustomLayeredView.h */,
-				FE8E25A028F69FAC004FCF75 /* MCCore.h */,
-				FE8E25A128F69FAC004FCF75 /* MCNewCustomLayer.h */,
-				FE8E25A228F69FAC004FCF75 /* MCPieChartView.m */,
-				FE8E25A328F69FAC004FCF75 /* MCSliceLayer.m */,
-				FE8E25A428F69FAC004FCF75 /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */,
-				FE8E25A528F69FAC004FCF75 /* MCUtil.h */,
-				FE8E25A628F69FAC004FCF75 /* MCNewCustomLayeredView.m */,
+				FEF93C4528F853F400E4E221 /* MCNewCustomLayer.m */,
+				FEF93C4628F853F400E4E221 /* MCUtil.m */,
+				FEF93C4728F853F400E4E221 /* MCSliceLayer.h */,
+				FEF93C4828F853F400E4E221 /* MCPieChartView.h */,
+				FEF93C4928F853F400E4E221 /* MCNewCustomLayeredView.h */,
+				FEF93C4A28F853F400E4E221 /* MCCore.h */,
+				FEF93C4B28F853F400E4E221 /* MCNewCustomLayer.h */,
+				FEF93C4C28F853F400E4E221 /* MCPieChartView.m */,
+				FEF93C4D28F853F400E4E221 /* MCSliceLayer.m */,
+				FEF93C4E28F853F400E4E221 /* MCNewCustomLayeredView+MCCustomLayeredViewSubclass.h */,
+				FEF93C4F28F853F400E4E221 /* MCUtil.h */,
+				FEF93C5028F853F400E4E221 /* MCNewCustomLayeredView.m */,
 			);
 			path = iOS_Pie_Chart;
 			sourceTree = "<group>";
@@ -219,9 +212,9 @@
 			files = (
 				FE8E258A28F69F72004FCF75 /* LaunchScreen.storyboard in Resources */,
 				FE8E258728F69F72004FCF75 /* Assets.xcassets in Resources */,
-				FE8E25AF28F69FAC004FCF75 /* LICENSE in Resources */,
+				FEF93C6328F853F400E4E221 /* README.txt in Resources */,
 				FE8E258528F69F71004FCF75 /* Main.storyboard in Resources */,
-				FE8E25B828F69FAC004FCF75 /* README.txt in Resources */,
+				FEF93C6828F853F400E4E221 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,20 +225,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE8E25AE28F69FAC004FCF75 /* LBDebugger.m in Sources */,
-				FE8E25B228F69FAC004FCF75 /* MCUtil.m in Sources */,
-				FE8E25B428F69FAC004FCF75 /* MCSliceLayer.m in Sources */,
-				FE8E25B928F69FAC004FCF75 /* Message.m in Sources */,
-				FE8E25B728F69FAC004FCF75 /* GraphicsManager.m in Sources */,
-				FE8E25B528F69FAC004FCF75 /* MCNewCustomLayeredView.m in Sources */,
+				FEF93C6428F853F400E4E221 /* Tab.m in Sources */,
 				FE8E258228F69F71004FCF75 /* ViewController.m in Sources */,
-				FE8E25B628F69FAC004FCF75 /* PieChart.m in Sources */,
-				FE8E25B328F69FAC004FCF75 /* MCPieChartView.m in Sources */,
+				FEF93C5D28F853F400E4E221 /* MCNewCustomLayer.m in Sources */,
 				FE8E257C28F69F71004FCF75 /* AppDelegate.m in Sources */,
-				FE8E25B028F69FAC004FCF75 /* Tab.m in Sources */,
+				FEF93C6228F853F400E4E221 /* PieChart.m in Sources */,
 				FE8E258D28F69F72004FCF75 /* main.m in Sources */,
 				FE8E257F28F69F71004FCF75 /* SceneDelegate.m in Sources */,
-				FE8E25B128F69FAC004FCF75 /* MCNewCustomLayer.m in Sources */,
+				FEF93C5E28F853F400E4E221 /* MCUtil.m in Sources */,
+				FEF93C6728F853F400E4E221 /* LBDebugger.m in Sources */,
+				FEF93C6528F853F400E4E221 /* GraphicsManager.m in Sources */,
+				FEF93C6028F853F400E4E221 /* MCSliceLayer.m in Sources */,
+				FEF93C6128F853F400E4E221 /* MCNewCustomLayeredView.m in Sources */,
+				FEF93C6628F853F400E4E221 /* Message.m in Sources */,
+				FEF93C5F28F853F400E4E221 /* MCPieChartView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
